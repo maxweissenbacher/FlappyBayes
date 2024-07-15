@@ -1,2 +1,0 @@
-Episodes	Total Reward	Episodeic Base Pressure	Episodic Pdiff	Average Drag	Average Side Force	Average Lift
-0	0.0	0	0	0.0	0.0	0.0
