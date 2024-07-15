@@ -1,6 +1,0 @@
-[2024-07-15 16:27:12,175][root][INFO] - Using lower bounds [tensor(-1.), tensor(-1.)] and upper bounds [tensor(1.), tensor(1.)].
-[2024-07-15 16:27:12,175][root][INFO] - Logging files to /Users/max/PycharmProjects/FlappyBayes/outputs/2024-07-15/16-27-12/.
-[2024-07-15 16:27:12,175][root][INFO] - --------------------
-[2024-07-15 16:27:12,175][root][INFO] - Initial random parameter search...
-[2024-07-15 16:27:12,176][root][INFO] - --------------------
-[2024-07-15 16:27:12,177][root][INFO] - Resetting environment...
