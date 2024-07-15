@@ -1,0 +1,8 @@
+torch==2.2.2
+numpy==1.24.1
+matplotlib
+botorch==0.10.0
+gpytorch==1.11
+pyDOE2==1.3.0
+tqdm
+hydra-core

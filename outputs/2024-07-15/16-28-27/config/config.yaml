@@ -1,0 +1,10 @@
+optim:
+  init_num_obs: 20
+  train_steps: 50
+  episode_steps: 1000
+  burnin_steps: 500
+  beta: 2.0
+  reset_iterations: 1
+  debug: true
+logging:
+  console_output: true

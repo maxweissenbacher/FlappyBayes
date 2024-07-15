@@ -1,0 +1,39 @@
+[2024-07-15 16:43:36,700][root][INFO] - Using lower bounds [-1.0, -1.0] and upper bounds [1.0, 1.0].
+[2024-07-15 16:43:36,700][root][INFO] - Logging files to /Users/max/PycharmProjects/FlappyBayes/outputs/2024-07-15/16-43-36/.
+[2024-07-15 16:43:36,700][root][INFO] - --------------------
+[2024-07-15 16:43:36,700][root][INFO] - Initial random parameter search...
+[2024-07-15 16:43:36,701][root][INFO] - --------------------
+[2024-07-15 16:43:36,716][root][INFO] - Iteration 0: params 0.901 / 0.289 | Value -3.77224
+[2024-07-15 16:43:36,716][root][INFO] - Iteration 1: params 0.255 / 0.347 | Value -3.32298
+[2024-07-15 16:43:36,716][root][INFO] - Iteration 2: params 0.113 / 0.033 | Value -0.74339
+[2024-07-15 16:43:36,717][root][INFO] - Iteration 3: params -0.560 / -0.617 | Value -4.49591
+[2024-07-15 16:43:36,717][root][INFO] - Iteration 4: params 0.734 / 0.796 | Value -4.58880
+[2024-07-15 16:43:36,717][root][INFO] - Iteration 5: params 0.627 / 0.609 | Value -4.61404
+[2024-07-15 16:43:36,718][root][INFO] - Iteration 6: params -0.339 / 0.906 | Value -4.23095
+[2024-07-15 16:43:36,718][root][INFO] - Iteration 7: params -0.707 / 0.167 | Value -3.43084
+[2024-07-15 16:43:36,718][root][INFO] - Iteration 8: params 0.816 / -0.533 | Value -4.47054
+[2024-07-15 16:43:36,719][root][INFO] - Iteration 9: params 0.044 / -0.358 | Value -2.51039
+[2024-07-15 16:43:36,719][root][INFO] - Iteration 10: params 0.372 / -0.909 | Value -4.13208
+[2024-07-15 16:43:36,720][root][INFO] - Iteration 11: params 0.443 / -0.759 | Value -4.43895
+[2024-07-15 16:43:36,720][root][INFO] - Iteration 12: params -0.475 / -0.831 | Value -4.44549
+[2024-07-15 16:43:36,721][root][INFO] - Iteration 13: params -0.865 / 0.566 | Value -4.54978
+[2024-07-15 16:43:36,721][root][INFO] - Iteration 14: params -0.206 / -0.093 | Value -1.71785
+[2024-07-15 16:43:36,722][root][INFO] - Iteration 15: params -0.922 / 0.881 | Value -3.63495
+[2024-07-15 16:43:36,722][root][INFO] - Iteration 16: params -0.089 / -0.428 | Value -2.88897
+[2024-07-15 16:43:36,723][root][INFO] - Iteration 17: params 0.505 / -0.154 | Value -3.09292
+[2024-07-15 16:43:36,723][root][INFO] - Iteration 18: params -0.164 / 0.481 | Value -3.35972
+[2024-07-15 16:43:36,724][root][INFO] - Iteration 19: params -0.607 / -0.240 | Value -3.81994
+[2024-07-15 16:43:36,724][root][INFO] - --------------------
+[2024-07-15 16:43:36,724][root][INFO] - Optimising angles...
+[2024-07-15 16:43:36,724][root][INFO] - --------------------
+[2024-07-15 16:43:37,042][root][INFO] - Iteration 0: params 0.015 / 0.022 | Value -0.13482
+[2024-07-15 16:43:37,145][root][INFO] - Iteration 1: params -0.015 / 0.043 | Value -0.08006
+[2024-07-15 16:43:37,244][root][INFO] - Iteration 2: params -0.031 / 0.013 | Value -0.17820
+[2024-07-15 16:43:37,350][root][INFO] - Iteration 3: params -0.015 / 0.086 | Value -0.50352
+[2024-07-15 16:43:37,440][root][INFO] - Iteration 4: params 0.001 / -0.026 | Value -0.04614
+[2024-07-15 16:43:37,523][root][INFO] - Iteration 5: params 0.002 / -0.032 | Value -0.21429
+[2024-07-15 16:43:37,614][root][INFO] - Iteration 6: params -0.004 / -0.011 | Value 0.05110
+[2024-07-15 16:43:37,752][root][INFO] - Iteration 7: params -0.004 / -0.016 | Value -0.17013
+[2024-07-15 16:43:37,834][root][INFO] - Iteration 8: params -0.004 / -0.011 | Value -0.08434
+[2024-07-15 16:43:37,926][root][INFO] - Iteration 9: params -1.000 / -1.000 | Value -3.54315
+[2024-07-15 16:43:38,390][root][INFO] - Finished execution.

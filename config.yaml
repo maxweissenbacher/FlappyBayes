@@ -1,0 +1,14 @@
+optim:
+  init_num_obs: 20
+  train_steps: 10
+  n_parameters: 2  # The number of parameters to be optimised
+  lower_bounds: [-1., -1.]  # Lower bounds for each of the parameters
+  upper_bounds: [1., 1.]  # Upper bounds for each of the parameters
+  beta: 2.0
+  debug: True
+
+logging:
+  console_output: True
+
+hydra:
+  output_subdir: config

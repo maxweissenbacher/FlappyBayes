@@ -1,0 +1,7 @@
+optim:
+  init_num_obs: 20
+  train_steps: 10
+  beta: 2.0
+  debug: true
+logging:
+  console_output: true
