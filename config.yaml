@@ -1,11 +1,11 @@
 optim:
-  init_num_obs: 20
-  train_steps: 10
-  n_parameters: 2  # The number of parameters to be optimised
-  lower_bounds: [-1., -1.]  # Lower bounds for each of the parameters
-  upper_bounds: [1., 1.]  # Upper bounds for each of the parameters
+  init_num_obs: 10
+  train_steps: 5
+  n_parameters: 4  # The number of parameters to be optimised
+  lower_bounds: [0., 0., 0., 0.]  # Lower bounds for each of the parameters
+  upper_bounds: [30., 30., 30., 30.]  # Upper bounds for each of the parameters Revise every time
   beta: 2.0
-  debug: True
+  debug: False
 
 logging:
   console_output: True

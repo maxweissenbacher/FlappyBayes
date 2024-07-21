@@ -1,0 +1,18 @@
+optim:
+  init_num_obs: 10
+  train_steps: 5
+  n_parameters: 4
+  lower_bounds:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  upper_bounds:
+  - 30.0
+  - 30.0
+  - 30.0
+  - 30.0
+  beta: 2.0
+  debug: false
+logging:
+  console_output: true

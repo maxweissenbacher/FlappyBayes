@@ -1,6 +1,8 @@
 import torch
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
+import subprocess
 from botorch.models import SingleTaskGP
 from botorch.fit import fit_gpytorch_mll
 from botorch.acquisition import UpperConfidenceBound
@@ -65,7 +67,9 @@ class BOTrainer:
             console_output += f"Value {float(train_y[-1]):.5f}"
             logging.info(console_output)
 
-        train_y = torch.tensor(np.asarray(train_y)).unsqueeze(-1)
+        train_y = np.asarray(train_y, dtype=np.float64)
+        # Convert the NumPy array to a PyTorch tensor and add a new dimension
+        train_y = torch.tensor(train_y).unsqueeze(-1)
 
         return train_x, train_y
 
@@ -90,7 +94,10 @@ class BOTrainer:
         )
         # Run experiment
         new_x = self.bounds_diff * new_x_scaled + self.lower_bound
+        # print(f"Try the following parameters: "{new_x})
         new_y, info = self.experiment(new_x.flatten())
+
+        new_y = torch.tensor(new_y)
         new_y = new_y.view([1, 1])
         # Add to training data
         new_train_x = torch.cat([train_x, new_x])
@@ -148,13 +155,37 @@ class BOTrainer:
         # You need to set off a run with the correct parameters
         # Then wait for the run to finish and write its results into a file
         # Then read that file here and compute the drag coefficient
-
+        import os
+    
         if self.debug:
             test_function = Ackley(dim=self.N_DIMS, noise_std=0.1, negate=True)
             drag = test_function(params)
         else:
+            # print(f"Try the following parameters: ",{params})
+            with open('Parameters.txt', 'w') as file:
+                # Join tensor values into a single line with spaces separating them
+                file.write(' '.join(map(str, params.tolist())))
             # Once the actual simulation code is here, remove this error message!
-            raise ValueError(f"Simulation mode not implemented. Debug mode must be activated.")
+            Windows=True
+            if Windows:
+                subprocess.run(["prueba.bat"],shell=True)
+            else:
+                subprocess.run(["./starccm", "-batch", "params.java", os.path.join(".","With_Flaps_RANS_Fine_1.sim")], shell=True) 
+            # Path to your CSV file
+            file_path = os.path.join(".","Cd.csv")
+
+            # Read the CSV file
+            df = pd.read_csv(file_path)
+
+            # Get the value from the second column and last row as a string
+            drag = str(df.iloc[-1, 1])
+
+            try:
+                drag = float(drag)  # Convert input to a float (handles integers as well)
+            except ValueError:
+                print(f"Invalid input. Please enter a valid number.")
+        
+        # raise ValueError(f"Simulation mode not implemented. Debug mode must be activated.")
 
         # Store any desired extra information in an info dictionary
         # Important: every entry is expected to be a NUMPY ARRAY
